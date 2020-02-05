@@ -7,6 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Informations</title>
 </head><body>
+<h1>Playlists:</h1><BR/>
+<?php
+$dir    = 'playlists';
+$files = scandir($dir);
+echo '<ol>';
+foreach ($files as $value)
+{
+if ($value !='.' and $value !='..' )
+{echo '<li><a href="playlists/'. $value.'">'.$value.'</a></li><br>';}
+else{}
+}
+echo '</ol>';
+?> 
 	<h1>Donate:</h1>
 	<div>
 		<p>
