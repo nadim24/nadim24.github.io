@@ -1594,7 +1594,7 @@ if(matchMedia('(min-width: 48rem)').matches) {
 const REPO_URL = document.scripts[0].src.replace(/\/\w+\/script\.js$/, '/');
 console.log('REPO_URL = ', REPO_URL);
 
-const CLOUD_URL = 'https://bazooka07.github.io/Ka-Radio32/'; // must end with '/'
+const CLOUD_URL = 'http://localhost:6789/karadio/'; // must end with '/'
 
 // Update urls for the version and playlists in the cloud
 ['version32', 'infos'].forEach(function(item){
